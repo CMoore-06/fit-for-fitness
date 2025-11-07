@@ -1,0 +1,8 @@
+nav, #navcheck {
+    display: none;
+}
+
+#navcheck:checked~nav {
+    display: flex;
+    flex-direction: column;
+}
