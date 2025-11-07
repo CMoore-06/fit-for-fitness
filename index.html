@@ -8,15 +8,64 @@
     <script src="https://kit.fontawesome.com/4f03d1b7a4.js" crossorigin="anonymous"></script>
     <title>Fit for Fitness - Home</title>
 </head>
-<body>
+<body class="container bg-secondary">
 
-    <label for="navcheck"><i class="fa-solid fa-dumbbell"></i></label>
-    <input type="checkbox" id="navcheck">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contactus.html">Contact Us</a>
-        <a href="schedule.html">Schedule</a>
-    </nav>
+    <header>
+        <div class="heading">
+            <img src="images/fitForFitnessLogo.png" alt="Fit For Fitness logo" width="100">
+            <h1>Fit For Fitness</h1>
+        </div>
+    
+        <div id="navdiv">
+            <label for="navcheck"><i class="fa-solid fa-dumbbell"></i></label>
+            <input type="checkbox" id="navcheck">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="schedule.html">Schedule</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards">
+            <h2 style="text-decoration: underline; text-align: center">Welcome to Fit For Fitness</h2>
+            <p>Fit for Fitness is a chain of gyms originating from Springfield, Missouri. Our philosophy is that you're perfect the way you are, but we're here if you want to get healthier. We have many personal trainers to help you achieve this goal. We also have many machines and weights and other exercise tools to if you'd rather work out yourself. We've worked hard to make a judgement-free workout enviornment for the enjoyment of everyone.</p>
+
+            <div class="dumbells card bg-secondary-subtle border-2 border-dark">
+                <img src="images/workout-machine.jpg" alt="Man using a workout machine." class="card-img">
+                <div class="card-body">
+                    <h3>Workout Machines</h3>
+                    <p>We have a wide variety workout machines at your disposal! You're free to come in and use any of them whenever you have the time.</p>
+                </div>
+            </div>
+
+            <div class="personal-trainer card bg-secondary-subtle border-2 border-dark">
+                <img src="images/personal-trainer.jpg" alt="Personal trainer helping client." class="card-img">
+                <div class="card-body">
+                    <h3>Personal Trainers</h3>
+                    <p>If you're new to working out, or just want some help, then you're in luck! We have many personal trainers who would be more than happy to help you!</p>
+                </div>
+            </div>
+
+            <div class="nutrition card bg-secondary-subtle border-2 border-dark">
+                <img src="images/nutrition.png" alt="Nutritional foods." class="card-img">
+                <div class="card-body">
+                    <h3>Nutrition Information</h3>
+                    <p>If you're looking to better your diet then we can help you with that too! We have many courses and person diet coaches to help you start eating better.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com" target="blank"><i class="fa-brands fa-x-twitter"></i></a>
+
+        <a href="mailto:contact@fitness.com" target="blank">contact@fitness.com</a>
+        <a href="tel:555-555-5555" target="blank">555-555-5555</a>
+    </footer>
     
 </body>
 </html>
