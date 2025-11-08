@@ -4,8 +4,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
-    margin: none;
+    margin: 0px;
 }
 
 nav, #navcheck {
@@ -34,7 +33,7 @@ footer {
 /* Text */
 label {
     align-items: start;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 nav a {
@@ -78,4 +77,49 @@ footer a:hover {
     display: flex;
     order: 2;
     align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 500px) {
+   #navdiv label {
+        display: none;
+   }
+
+   #navdiv {
+        display: flex;
+        order: 2;
+        justify-content: center;
+   }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0  10px;
+    }
+
+    header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
