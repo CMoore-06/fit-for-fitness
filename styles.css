@@ -49,6 +49,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+legend {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
 footer a {
     color: black;
     text-decoration: none;
@@ -58,7 +64,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Sections and Divs */
+/* Sections, Divs, anc Classes */
 .card {
     border: 5px solid black;
     text-align: center;
@@ -78,6 +84,27 @@ footer a:hover {
     order: 2;
     align-items: center;
     justify-content: center;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-txt {
+    width: 7rem;
+}
+
+.first input, .last input, #email input {
+    width: 30%;
+}
+
+#contact-information {
+    border: 2px solid blue;
+}
+
+.first label, .last label, .emtxt {
+    color: black;
 }
 
 @media (min-width: 500px) {
