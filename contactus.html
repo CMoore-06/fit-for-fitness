@@ -10,8 +10,10 @@
 </head>
 <body class="container bg-secondary">
     <header class="mb-4">
+
+        <img src="images/fitForFitnessLogo.png" alt="Fit For Fitness logo" width="100" class="hero-img">
             <div class="heading">
-                <img src="images/fitForFitnessLogo.png" alt="Fit For Fitness logo" width="100" class="hero-img">
+                
                 <h1>Fit For Fitness</h1>
             </div>
         
@@ -47,9 +49,33 @@
             </div>
             <p class="emtxt form-text mb-3">Email</p>
 
-            <button type="submit" class="btn btn-primary mb-3">Submit</button>
-
         </fieldset>
+
+        <fieldset id="interests" name="interests" class="container border-2 border-dark mb-5 mt-5">
+            <legend>Workout Interests</legend>
+
+            <div id="workout-machine">
+                <input type="checkbox" id="wm">
+                <label for="wm" class="form-text">Workout Machines</label>
+            </div>
+
+            <div id="personal-trainer">
+                <input type="checkbox" id="trainer">
+                <label for="trainer" class="form-text">Personal Trainer</label>
+            </div>
+
+            <div id="yogabox">
+                <input type="checkbox" id="yoga">
+                <label for="yoga" class="form-text">Yoga</label>
+            </div>
+
+            <div id="nutritional">
+                <input type="checkbox" id="nutrition" class= "mb-3">
+                <label for="nutrition" class="form-text">Nutritional Help</label>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
     </main>    
 
      <footer>
