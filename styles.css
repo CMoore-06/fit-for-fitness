@@ -7,7 +7,8 @@ header {
     margin: 0px;
 }
 
-nav, #navcheck {
+nav,
+#navcheck {
     display: none;
 }
 
@@ -31,8 +32,12 @@ footer {
 }
 
 .hero-img {
-        display: none;
-    }
+    display: none;
+}
+
+.heading img {
+    display: none;
+}
 
 /* Text */
 label {
@@ -54,9 +59,8 @@ nav a:hover {
 }
 
 legend {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 13pt;
+    float: none;
 }
 
 footer a {
@@ -73,6 +77,7 @@ footer a:hover {
     border: 5px solid black;
     text-align: center;
     margin: 5px;
+    width: 90%;
 }
 
 .cards {
@@ -96,20 +101,31 @@ footer a:hover {
     flex-direction: row;
 }
 
-.email-txt {
-    width: 7rem;
+.first input,
+.last input,
+#email input {
+    width: 50%;
 }
 
-.first input, .last input, #email input {
-    width: 30%;
-}
-
-.first label, .last label, .emtxt {
+.first label,
+.last label,
+.emtxt {
     color: black;
 }
 
-#workout-machine, #personal-trainer, #yogabox, #nutritional {
+#workout-machine,
+#personal-trainer,
+#yogabox,
+#nutritional {
     color: black;
+    padding: 0 10px;
+}
+
+.third,
+.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Other */
@@ -121,16 +137,48 @@ footer a:hover {
     padding: 5px;
 }
 
-@media (min-width: 500px) {
-   #navdiv label {
-        display: none;
-   }
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
 
-   #navdiv {
+@media (min-width: 720px) {
+    header {
+        text-align: center;
+        flex-direction: row;
+    }
+
+    /* .card {
+        width: 100%;
+    } */
+
+    .cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .second,
+    .third {
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {
+    #navdiv label {
+        display: none;
+    }
+
+    #navdiv {
         display: flex;
         order: 2;
         justify-content: center;
-   }
+    }
 
     nav {
         display: flex;
@@ -141,20 +189,19 @@ footer a:hover {
     nav a {
         font-size: 1.5rem;
         font-weight: bold;
-        padding: 0  10px;
-    }
-
-    header {
-        text-align: center;
-        flex-direction: column;
+        padding: 0 10px;
     }
 
     .heading {
-        margin: 0px;
+        margin-left: 0rem;
     }
 
-    .card {
-        width: 30%;
+    header {
+        flex-direction: column;
+    }
+
+    .first input, .last input {
+        width: 20%;
     }
 
     .cards {
@@ -162,9 +209,8 @@ footer a:hover {
         flex-direction: row;
     }
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+    .card {
+        width: 30%;
     }
+
 }

@@ -10,10 +10,8 @@
 </head>
 <body class="container bg-secondary">
     <header class="mb-4">
-
-        <img src="images/fitForFitnessLogo.png" alt="Fit For Fitness logo" width="100" class="hero-img">
             <div class="heading">
-                
+                <img src="images/fitForFitnessLogo.png" alt="Fit For Fitness logo" width="100">
                 <h1>Fit For Fitness</h1>
             </div>
         
@@ -30,8 +28,8 @@
 
     <main>
 
-        <fieldset id="contact-information" name="contact-information" class="container border-2 border-dark mb-5 mt-5">
-            <legend class="mb-3">Contact Information</legend>
+        <fieldset id="contact-information" name="contact-information" class="container border-2 border-dark mb-5 mt-5" >
+            <legend class="mb-3 ms-3">Contact Information</legend>
 
             <div class="first">
                 <input type="text" id="name" class="form-control">
@@ -43,35 +41,42 @@
                 <label for="name2" class="form-text mb-3">Last Name</label>
             </div>
 
-            <div id="email">
-                <input type="email" id="email2" class="form-control">
-                <label for="email2" class="input-group-text email-txt">@gmail.com</label>
+            <div id="email" class="mb-3">
+                <label for="email2" class="input-group-text email-txt">Best way to contact you</label>
+                <select>
+                    <opton value="email">Email</opton>
+                    <option value="phone">Phone Number</option>
+                    <option value="carrier">Carrier Pigeon</option>
+                </select>
             </div>
-            <p class="emtxt form-text mb-3">Email</p>
 
         </fieldset>
 
-        <fieldset id="interests" name="interests" class="container border-2 border-dark mb-5 mt-5">
-            <legend>Workout Interests</legend>
+        <fieldset id="interests" name="interests" class="container border-2 border-dark border-top-dark mb-5 mt-5">
+            <legend class="ms-3">Workout Interests</legend>
 
-            <div id="workout-machine">
-                <input type="checkbox" id="wm">
-                <label for="wm" class="form-text">Workout Machines</label>
+            <div class="second">
+                <div id="workout-machine">
+                    <input type="checkbox" id="wm">
+                    <label for="wm" class="form-text mb-1">Workout Machines</label>
+                </div>
+
+                <div id="personal-trainer">
+                    <input type="checkbox" id="trainer">
+                    <label for="trainer" class="form-text mb-1">Personal Trainer</label>
+                </div>
             </div>
 
-            <div id="personal-trainer">
-                <input type="checkbox" id="trainer">
-                <label for="trainer" class="form-text">Personal Trainer</label>
-            </div>
+            <div class="third">
+                <div id="yogabox">
+                    <input type="checkbox" id="yoga">
+                    <label for="yoga" class="form-text mb-1">Yoga</label>
+                </div>
 
-            <div id="yogabox">
-                <input type="checkbox" id="yoga">
-                <label for="yoga" class="form-text">Yoga</label>
-            </div>
-
-            <div id="nutritional">
-                <input type="checkbox" id="nutrition" class= "mb-3">
-                <label for="nutrition" class="form-text">Nutritional Help</label>
+                <div id="nutritional">
+                    <input type="checkbox" id="nutrition" class= "mb-3">
+                    <label for="nutrition" class="form-text mb-1">Nutritional Help</label>
+                </div>
             </div>
         </fieldset>
 
